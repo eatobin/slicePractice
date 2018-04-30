@@ -19,6 +19,12 @@ func myMap() {
 	}
 }
 
+func sumAndProduct(a, b int) (s int, p int) {
+	s = a + b
+	p = a * b
+	return
+}
+
 func main() {
 	aSlice = array[:3]
 	println(string(aSlice))
@@ -63,6 +69,12 @@ func main() {
 	println(string(aSlice))
 
 	myMap()
+
+	a := 8
+	b := 8
+	s, p := sumAndProduct(a,b)
+	fmt.Printf("%d + %d = %d\n", a, b, s)
+	fmt.Printf("%d * %d = %d\n", a, b, p)
 
 	//delete(rating, "C") // delete element with key "c"
 }
